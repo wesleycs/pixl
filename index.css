@@ -1,0 +1,108 @@
+body {
+    background-color: #FFFFF;
+}
+
+table, td, th {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5% ;
+    margin-bottom: 10%;
+    border: 1px solid black;
+    float: middle;
+
+}
+
+th {
+    color: orange;
+    font-size:38px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+#container {
+    background-image: url("panther.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 500px;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+
+#shadow {
+    width: inherit;
+    height: inherit;
+    box-shadow: -15px 35px 50px #a3a3a3;
+    z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: inherit;
+  bottom: inherit;
+  left: inherit;
+  right: inherit;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F3f3f3;
+}
+
+#container:hover .overlay {
+  opacity: 1;
+}
+
+.info {
+  font-family: "calibri";
+  text-align: center;
+  color: black;
+  font-size: ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.title {
+    line-height: 50%;
+    font-weight: 400;
+}
+
+.artist {
+    color: #A9A9A9;
+    line-height: 50%;
+    font-weight: 100; !important;
+}
+
+.description {
+    font-weight: 100;
+}
+
+.button {
+    background-color: #0000FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#footer {
+    padding-top: 25%;
+}

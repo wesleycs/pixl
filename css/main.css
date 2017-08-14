@@ -1,0 +1,25 @@
+table, td, th {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5% ;
+    margin-bottom: 10%;
+    border: 1px solid black;
+    float: middle;
+
+}
+
+th {
+    color: orange;
+    font-size:38px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
