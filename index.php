@@ -31,6 +31,6 @@
     <div class="counter">
     <p class="count"><?php echo $count_user_online; ?> 👁️</p>
     </div>
-<p>This is a test : <?php echo $count_user_online; ?> </p>
+
 </body>
 </html>
