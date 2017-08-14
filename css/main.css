@@ -1,3 +1,15 @@
+.container {
+    box-shadow: -15px 35px 50px #a3a3a3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    background-image: url("b1.jpg");
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 500px;
+    background-size: 100% 100%;
+}
+
 table, td, th {
     border: 1px solid black;
     margin-left: auto;
@@ -22,4 +34,85 @@ ul {
 
 li {
     display: inline;
+}
+
+.overlay {
+  position: absolute;
+  top: inherit;
+  bottom: inherit;
+  left: inherit;
+  right: inherit;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F3f3f3;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.info {
+  font-family: "calibri";
+  text-align: center;
+  color: black;
+  font-size: ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.title {
+    line-height: 50%;
+    font-weight: 400;
+}
+
+.artist {
+    color: #A9A9A9;
+    line-height: 50%;
+    font-weight: 100; !important;
+}
+
+.description {
+    font-weight: 100;
+}
+
+.button {
+    background-color: #0000FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.counter {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border: 0px solid white;
+    width: 60px;
+    border-radius: 45px;
+    background: white;
+    padding: 10px;
+    height: 5px;
+    box-shadow: -1px 2px 4px #d3d3d3;
+}
+
+.count {
+  text-align: center;
+  vertical-align: middle;
+  line-height: -200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: gray;
+  padding-top: -10px;
+  margin-top: -10px;
 }
