@@ -26,6 +26,10 @@
       </img>
     </div>
 
+    <div class="counter">
+    <p class="count"><?php echo $count_user_online; ?> 👁️</p>
+    </div>
+
     <div class="container" onclick="void(0)">
         <div class="overlay">
             <div class="info">
