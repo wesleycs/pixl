@@ -78,6 +78,8 @@ li {
 
 .description {
     font-weight: 100;
+    padding-top: 3%;
+    line-height: 100%;
 }
 
 .button {
@@ -96,13 +98,14 @@ li {
 .counter {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25%;
+    margin-top: 20%;
+    margin-bottom: 5%;
     border: 0px solid white;
     width: 60px;
     border-radius: 45px;
     background: white;
     padding: 10px;
-    height: 5px;
+    height: 10px;
     box-shadow: -1px 2px 4px #d3d3d3;
 }
 
@@ -132,7 +135,7 @@ li {
       font-size:38px;
   }
 
-  .box {
+  .container {
       height: 350px;
       width: 500px;
   }
