@@ -24,6 +24,7 @@
 
     <div class="container" onclick="void(0)">
         <div class="overlay">
+            	<img src="http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg" alt=”sample image”>
             <div class="info">
                 <h2 class="title">Hello World</h2>
                 <h3 class="artist">by <span><a style="text-decoration: underline;" href="https://www.instagram.com/wcsendom/">Wesley Csendom<a></span></h3>
@@ -39,4 +40,6 @@
     </div>
 
 </body>
+
+<? php include 'main.js';?>
 </html>
