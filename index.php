@@ -22,7 +22,7 @@
 <body>
 
     <div class="test">
-      <img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/7870535/president_official_portrait_hires.jpg">
+      <img src="http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg">
       </img>
     </div>
 
