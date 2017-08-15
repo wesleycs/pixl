@@ -9,7 +9,7 @@
 }
 
 .landscape{
-width: 1100px;
+width: 500px;
 height: 350px;
 margin-left: auto;
 margin-right: auto;
@@ -18,7 +18,7 @@ background-image: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7870535
 }
 .portrait{
 width: 300px;
-height: 1000px;
+height: 500px;
 margin-left: auto;
 margin-right: auto;
 background-image: url("http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg");
@@ -153,9 +153,20 @@ li {
       font-size:38px;
   }
 
-  .container {
-      height: 350px;
-      width: 500px;
+  .landscape{
+  width: 500px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7870535/president_official_portrait_hires.jpg");
+
+  }
+  .portrait{
+  width: 350px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg");
   }
 
   .counter {
