@@ -21,6 +21,10 @@
 
 <body>
 
+    <div class="test">
+      <img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/7870535/president_official_portrait_hires.jpg">
+      </img>
+    </div>
 
     <div class="container" onclick="void(0)">
         <div class="overlay">
@@ -39,4 +43,8 @@
     </div>
 
 </body>
+
+<script src="jquery-1.6.1.js"></script>
+<script src="main.js"></script>
+
 </html>
