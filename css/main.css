@@ -4,7 +4,7 @@
     margin-right: auto;
     background-image: url("../images/b1.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;    
+    background-size: 100% 100%;
     margin-bottom: 30%;
 }
 
@@ -76,7 +76,7 @@ li {
 .dismiss {
   float: right;
   padding-right: 3%;
-  margin-top: -0.1px; 
+  margin-top: -0.1px;
   font-family: Arial, "Helvetica", sans-serif;
   color: #BEBEBE;
   font-weight: ;
@@ -196,6 +196,9 @@ li {
 
  .dismiss {
   display: none;
+  }
 
-}
+  .container:active .overlay {
+    opacity: 1;
+  }
 }
