@@ -29,7 +29,8 @@
 
     <div class="container" onclick="void(0)">
         <div class="overlay">
-            <div class="info">
+          <h1 class="dismiss">X</h3>
+	    <div class="info">
                 <h2 class="title">Hello World</h2>
                 <h3 class="artist">by <span><a style="text-decoration: underline;" href="https://www.instagram.com/wcsendom/">Wesley Csendom<a></span></h3>
                 <h4 class="description">A set of three 11"x17" one-color Risograph prints. Signed & numbered edition of 25.<span class="price">
