@@ -8,26 +8,26 @@
     margin-bottom: 30%;
 }
 
-.landscape{
-width: 500px;
-height: 350px;
-margin-top: 10%;
-margin-left: auto;
-margin-right: auto;
-background-image: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7870535/president_official_portrait_hires.jpg");
-
+.landscape {
+    width: 500px;
+    height: 350px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7870535/president_official_portrait_hires.jpg");
 }
-.portrait{
-width: 350px;
-height: 500px;
-margin-top: 5%;
-margin-left: auto;
-margin-right: auto;
-background-image: url("http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg");
+
+.portrait {
+    width: 350px;
+    height: 500px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg");
 }
 
 .test img {
-  display: none;
+    display: none;
 }
 
 table, td, th {
@@ -38,12 +38,11 @@ table, td, th {
     margin-bottom: 40%;
     border: 1px solid black;
     float: middle;
-
 }
 
 th span a {
     color: orange;
-    font-size:50px;
+    font-size: 50px;
     text-decoration: none;
 }
 
@@ -58,42 +57,39 @@ li {
 }
 
 .overlay {
-  position: absolute;
-  top: inherit;
-  bottom: inherit;
-  left: inherit;
-  right: inherit;
-  height: inherit;
-  width: inherit;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #F3f3f3;
+    position: absolute;
+    top: inherit;
+    bottom: inherit;
+    left: inherit;
+    right: inherit;
+    height: inherit;
+    width: inherit;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F3f3f3;
 }
 
-
 .dismiss {
-  float: right;
-  padding-right: 3%;
-  margin-top: -0.1px;
-  font-family: Arial, "Helvetica", sans-serif;
-  color: #BEBEBE;
-  font-weight: ;
-  font-size: 40px;
+    float: right;
+    padding-right: 3%;
+    margin-top: -0.1px;
+    font-family: Arial, "Helvetica", sans-serif;
+    color: #BEBEBE;
+    font-weight: ;
+    font-size: 40px;
 }
 
 .info {
-  font-family: "calibri";
-  text-align: center;
-  color: black;
-  font-size: ;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-
+    font-family: "calibri";
+    text-align: center;
+    color: black;
+    font-size: ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
-
 
 .title {
     line-height: 50%;
@@ -103,7 +99,8 @@ li {
 .artist {
     color: #A9A9A9;
     line-height: 50%;
-    font-weight: 100; !important;
+    font-weight: 100;
+    !important;
 }
 
 .description {
@@ -126,7 +123,7 @@ li {
 }
 
 .button:hover {
-   background-color: ;
+    background-color: ;
 }
 
 .counter {
@@ -141,96 +138,83 @@ li {
     padding: 10px;
     height: 13px;
     box-shadow: -1px 2px 4px #d3d3d3;
-
 }
 
 .count {
-  text-align: center;
-  vertical-align: middle;
-  line-height: -200px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  color: gray;
-  padding-top: -10px;
-  margin-top: -8px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: -200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: gray;
+    padding-top: -10px;
+    margin-top: -8px;
 }
 
 .menu {
-  text-align: center;
-  padding-bottom: 5%;
+    text-align: center;
+    padding-bottom: 5%;
 }
 
 .menu ul {
-  display: inline-table;;
+    display: inline-table;
+    ;
 }
 
 .menu ul li {
-  display:inline;
-  padding-left: 10px;
-  padding-right: 10px;	
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .menu ul li a {
-  text-decoration: none;
-  color: #E0E0E0;
-  font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #E0E0E0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+@media only screen and (min-width: 33.75em) {}
 
-
-
-@media only screen and (min-width: 33.75em) {
-
-}
-
-@media only screen and (min-width: 60em) { /* 960px */
-/*  .container {
+@media only screen and (min-width: 60em) {
+    /* 960px */
+    /*  .container {
     width: 75%;
     max-width: 60rem;
   }*/
-
-  th {
-      color: orange;
-      font-size:65px;
-  }
-
-  table, td, th {
-	margin-top: 5%;
-	margin-bottom: 10%;
-
-  }
-
-  .landscape{
-  width: 500px;
-  height: 350px;
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7870535/president_official_portrait_hires.jpg");
-
-  }
-  .portrait{
-  width: 400px;
-  height: 500px;
-  margin-top: -5%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url("http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg");
-  }
-
-  .counter {
-      margin-top: -25%;
-  }
-
- .dismiss {
-  display: none;
-  }
-
-.container:hover .overlay{
-  opacity: 1;
-}
-
-.menu {
-  display: ;
-}
+    th {
+        color: orange;
+        font-size: 65px;
+    }
+    table, td, th {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .landscape {
+        width: 500px;
+        height: 350px;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7870535/president_official_portrait_hires.jpg");
+    }
+    .portrait {
+        width: 400px;
+        height: 500px;
+        margin-top: -5%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg");
+    }
+    .counter {
+        margin-top: -25%;
+    }
+    .dismiss {
+        display: none;
+    }
+    .container:hover .overlay {
+        opacity: 1;
+    }
+    .menu {
+        display: ;
+    }
 }
