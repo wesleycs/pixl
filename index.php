@@ -9,7 +9,10 @@
 </head>
 
 <body>
+
+
 <div>
+
 <ul>
     <table>
         <tr>
@@ -25,7 +28,6 @@
       <img src="http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg">
       </img>
     </div>
-
 
     <div class="container" onclick="void(0)">
         <div class="overlay">
@@ -43,6 +45,18 @@
     <div class="counter">
     <p class="count"><?php echo $count_user_online; ?> 👁️</p>
     </div>
+
+<div class="menu">
+<ul>
+ <li><a href="/new">about</a></li>
+ <li><a href="">archive</a></li>
+ <li><a href="">contact</a></li>
+</ul>
+</div>
+
+<div class="menu">
+<ul>
+ <li><
 
 </body>
 

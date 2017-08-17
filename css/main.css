@@ -90,7 +90,9 @@ li {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+
 }
+
 
 .title {
     line-height: 50%;
@@ -122,6 +124,10 @@ li {
     cursor: pointer;
 }
 
+.button:hover {
+   background-color: ;
+}
+
 .counter {
     margin-left: auto;
     margin-right: auto;
@@ -147,6 +153,30 @@ li {
   padding-top: -10px;
   margin-top: -8px;
 }
+
+.menu {
+  text-align: center;
+  display: ;
+}
+
+.menu ul {
+  display: inline-table;;
+}
+
+.menu ul li {
+  display:inline;
+  padding-left: 10px;
+  padding-right: 10px;	
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 
 @media only screen and (min-width: 33.75em) {
 
@@ -199,4 +229,7 @@ li {
   opacity: 1;
 }
 
+.menu {
+  display: ;
+}
 }
