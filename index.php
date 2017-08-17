@@ -16,7 +16,7 @@
 <ul>
     <table>
         <tr>
-            <th>PIXL</th>
+            <th><span><a href="">PIXL</a></span></th>
         </tr>
         </table>
     </ul>
@@ -48,18 +48,13 @@
 
 <div class="menu">
 <ul>
- <li><a href="/new">about</a></li>
+ <li><a href="/about">about</a></li>
  <li><a href="">archive</a></li>
  <li><a href="">contact</a></li>
 </ul>
 </div>
 
-<div class="menu">
-<ul>
- <li><img src="images/icons/instagram_logo.png" style="height: 20px; width: 20px; background-color: ;"></li>
- <li><img src="images/icons/twitter_logo.png" style="height: 20px; width: 20px; background-color: "></li>
-</ul>
-</div>
+
 
 </body>
 

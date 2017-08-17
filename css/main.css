@@ -41,9 +41,10 @@ table, td, th {
 
 }
 
-th {
+th span a {
     color: orange;
     font-size:50px;
+    text-decoration: none;
 }
 
 ul {
@@ -156,7 +157,7 @@ li {
 
 .menu {
   text-align: center;
-  display: ;
+  padding-bottom: 5%;
 }
 
 .menu ul {
