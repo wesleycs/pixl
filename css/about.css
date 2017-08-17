@@ -3,7 +3,7 @@ table, td, th {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20%;
-    margin-bottom: 40%;
+    margin-bottom: 20%;
     border: 1px solid black;
     float: middle;
 }
@@ -46,6 +46,17 @@ li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.about {	
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.about p {
+    display: inline-block;
+    
+}
+
 @media only screen and (min-width: 33.75em) {}
 
 @media only screen and (min-width: 60em) {
@@ -67,4 +78,9 @@ li {
     .menu {
         display: ;
     }
+   
+    .about {
+        width: 50%;
+    }
+
 }
