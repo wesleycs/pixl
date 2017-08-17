@@ -56,7 +56,10 @@
 
 <div class="menu">
 <ul>
- <li><
+ <li><img src="images/icons/instagram_logo.png" style="height: 20px; width: 20px; background-color: ;"></li>
+ <li><img src="images/icons/twitter_logo.png" style="height: 20px; width: 20px; background-color: "></li>
+</ul>
+</div>
 
 </body>
 
