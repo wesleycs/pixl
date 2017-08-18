@@ -26,6 +26,7 @@
 
     <div class="test">
       <img src="http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg">
+<!--	<img src="images/b1.jpg"> -->
       </img>
     </div>
 
@@ -50,7 +51,7 @@
 <ul>
  <li><a href="/about">about</a></li>
  <li><a href="">archive</a></li>
- <li><a href="">contact</a></li>
+ <li><a href="/contact">contact</a></li>
 </ul>
 </div>
 
