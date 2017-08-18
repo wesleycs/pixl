@@ -55,7 +55,12 @@
 </ul>
 </div>
 
-
+<div class="icons">
+<ul>
+ <li><a href="https://www.twitter.com/pixl"><img class="twitter" src="images/icons/twitter_logo.svg"></a></li>
+ <li><a href="https://www.instagram.com/pixl"><img class="instagram" src="images/icons/insta_logo.svg"></a></li>
+</ul>
+</div>
 
 </body>
 
