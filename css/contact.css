@@ -26,7 +26,7 @@ li {
 
 .menu {
     text-align: center;
-    padding-bottom: 0%;
+    padding-bottom: 5%;
 }
 
 .menu ul {
@@ -60,7 +60,7 @@ li {
 
 .menu {
     text-align: center;
-    padding-bottom: 5%;
+   
 }
 
 .menu ul {
@@ -122,7 +122,7 @@ li {
 
     }
     .menu {
-        display: ;
+        padding-bottom: 0%;
     }
 
     .about {

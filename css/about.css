@@ -26,12 +26,12 @@ li {
 
 .menu {
     text-align: center;
-    padding-bottom: ;
+    padding-bottom: %;
 }
 
 .menu ul {
     display: inline-table;
-    ;
+   
 }
 
 .menu ul li {
@@ -61,7 +61,7 @@ li {
 
 .menu {
     text-align: center;
-    padding-bottom: 0%;
+    padding-bottom: 4%;
 }
 
 .menu ul {
@@ -83,7 +83,7 @@ li {
 
 .icons {
     text-align: center;
-    padding-top: 5%;
+    margin-top: 5%;
     padding-bottom: 5%;
 }
 
@@ -95,7 +95,7 @@ li {
     display: inline;
     padding-left: 10px;
     padding-right: 10px;
- 
+	 
 }
 
 .twitter {
@@ -117,13 +117,13 @@ li {
         font-size: 65px;
     }
     table, td, th {
-        margin-top: 5%;
+        margin-top: 10%;
         margin-bottom: 10%;
     }
 
     }
     .menu {
-        display: ;
+        padding-top: % ;
     }
 
     .about {
@@ -131,7 +131,7 @@ li {
     }
 
     .icons {
-        padding-top: 2%;
+        margin-top: -3%;
         padding-bottom: 2%;
     }
 }

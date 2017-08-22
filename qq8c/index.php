@@ -2,7 +2,7 @@
 <head>
 <title>Pixl-Gallery </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<?php include '../css/qq8c.css'; ?>
+<?php include 'form_processor.php';?>
 <style>
 </style>
 </head>
@@ -24,13 +24,36 @@
 <body>
 
 <div class="submit">
-<p>Pixl is a curated art gallery and retail space.<br><br>
-   Pieces are displayed in the order that they are received.<br><br>
-   When the current work is
-   sold a new piece will take its place.<br><br>
-   If you would like to feature your work on Pixl please click <a href="../contact">here</a><br><br>
-   Check back often to discover new artists and enjoy new works.
-   </p>
+<form action="" method="post" enctype="multipart/form-data">
+	Select image to upload:
+	<input type="file" name="file" id="file"><br><br>	
+	Title of Artwork: <input type="text" name="title" value=""><br><br>
+	Name of Artist (First, Last): <input type="text" name="artist" value=""><br><br>
+	Link to artist site or profile (https://www.site.com) : <input type="text" name="site" value=""><br><br>
+	Description of Artwork (dimensions, medium, description) : <input type="text" name="description" value=""><br><br>
+	Price (ex. $15.00): <input type="text" name="price" value=""><br><br>
+	<input type="submit" value="Upload" name="submit">
+</form>
+
+<?php
+/*
+if(isset($_POST["submit"])){
+	$name = $_FILES['file']['name'];
+	$temp_name = $_FILES['file']['tmp_name'];
+	$location = '/var/www/test/uploads/';
+	if(move_uploaded_file($temp_name, $location.$name)){
+	echo "success";
+	}
+	else { 
+	echo "fail"; }
+		
+
+	echo "Debug info: ";
+	print_r($_FILES);
+}
+*/
+?>
+
 </div>
 
 
@@ -38,3 +61,4 @@
 
 
 </html>
+
