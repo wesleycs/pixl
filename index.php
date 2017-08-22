@@ -32,27 +32,33 @@
         <div class="overlay">
           <h1 class="dismiss">X</h3>
 	    <div class="info">
-                <h2 class="title"><?php 
+                <h2 class="title">
+		<?php 
 		$infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
 		echo $info['title'];
 		?></h2>
-                <h3 class="artist">by <?php
-		$infotxt = file_get_contents('/var/www/test/uploads/info.txt');
-		$info = unserialize($infotxt);
-		echo $info['artist'];
-		?><span><a style="text-decoration: underline;" href="<?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
+                <h3 class="artist">by <span><a style="text-decoration: underline;" href=
+		"<?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
 		echo $info['site'];
-		?>"><a></span></h3>
-                <h4 class="description"><?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
+		?>">
+	        <?php
+		$infotxt = file_get_contents('/var/www/test/uploads/info.txt');
+		$info = unserialize($infotxt);
+		echo $info['artist']; 
+		?>
+		</a></span></h3>
+                <h4 class="description">
+		<?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
 		echo $info['description'];
-		?><span class="price">
+		?>
+		<span class="price">
                 <?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
 		echo $info['price'];
-		 ?></span> </h4>
+	         ?></span> </h4>
                 <input type="button" class="button" value="Buy">
             </div>
         </div>
