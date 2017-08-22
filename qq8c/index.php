@@ -35,25 +35,6 @@
 	<input type="submit" value="Upload" name="submit">
 </form>
 
-<?php
-/*
-if(isset($_POST["submit"])){
-	$name = $_FILES['file']['name'];
-	$temp_name = $_FILES['file']['tmp_name'];
-	$location = '/var/www/test/uploads/';
-	if(move_uploaded_file($temp_name, $location.$name)){
-	echo "success";
-	}
-	else { 
-	echo "fail"; }
-		
-
-	echo "Debug info: ";
-	print_r($_FILES);
-}
-*/
-?>
-
 </div>
 
 
