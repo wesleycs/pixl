@@ -27,7 +27,6 @@ if(isset($_POST["submit"])){
 	$infotxt = file_get_contents('/var/www/test/uploads/info.txt');	
 	$info = unserialize($infotxt);
 
-	echo $info['title'];
 
 	if(move_uploaded_file($temp_name, $location.$name)){
 	echo "success";

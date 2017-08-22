@@ -61,7 +61,7 @@ li {
 
 .menu {
     text-align: center;
-    padding-bottom: 4%;
+    padding-bottom: %;
 }
 
 .menu ul {
@@ -83,7 +83,7 @@ li {
 
 .icons {
     text-align: center;
-    margin-top: 5%;
+    padding-top: 12%;
     padding-bottom: 5%;
 }
 
@@ -123,7 +123,7 @@ li {
 
     }
     .menu {
-        padding-top: % ;
+        margin-top:%;
     }
 
     .about {
@@ -131,7 +131,7 @@ li {
     }
 
     .icons {
-        margin-top: -3%;
+        margin-top: -7%;
         padding-bottom: 2%;
     }
 }

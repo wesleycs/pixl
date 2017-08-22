@@ -27,7 +27,7 @@
 }
 
 .test img {
-    display: none;
+    display: none ;
 }
 
 table, td, th {
@@ -201,17 +201,7 @@ li {
     width:18px;
 }
 
-.about {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-bottom: 20%;
-}
 
-.about p {
-    display: inline-block;
-
-}
 
 @media only screen and (min-width: 33.75em) {}
 
@@ -250,7 +240,6 @@ li {
     .container:hover .overlay {
         opacity: 1;
     }
-
     .icons {
         padding-top: 2%;
         padding-bottom: 2%;
