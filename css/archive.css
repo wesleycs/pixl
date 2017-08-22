@@ -31,7 +31,7 @@ li {
     display: inline;
 }
 
-.text {
+.image_container {
     width: 50%;
     height: 50%;
     margin-left: auto;
@@ -40,7 +40,7 @@ li {
     padding-bottom: ;
 }
 
-.text p {
+.image_container p {
     display: inline-block;
 }
 
@@ -120,7 +120,7 @@ li {
         padding-top: 12%;
         padding-bottom: 0%;
     }
-    .text {
+    .image_container {
         width: 30%;
         height: 38%;
     }
