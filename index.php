@@ -72,6 +72,7 @@
     <p class="count"><?php echo $count_user_online; ?> 👁️</p>
     </div>
 
+<div class="footer">
 <div class="menu">
 <ul>
  <li><a href="/about">about</a></li>
@@ -86,7 +87,7 @@
  <li><a href="https://www.instagram.com/pixl"><img class="instagram" src="images/icons/insta_logo.svg"></a></li>
 </ul>
 </div>
-
+</div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
