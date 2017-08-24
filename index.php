@@ -7,6 +7,10 @@
 <style>
 <?php include 'css/main.css'; ?>
 </style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
 </head>
 <body>
 
@@ -21,10 +25,9 @@
     </ul>
 </div>
 
-<body>
-
     <div class="test">
-      <img src="http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg">
+     <!--  <img src="http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg">-->
+	<img src="picture.jpg">
       </img>
     </div>
 
@@ -38,7 +41,7 @@
 		$info = unserialize($infotxt);
 		echo $info['title'];
 		?></h2>
-                <h3 class="artist">by <span><a style="text-decoration: underline;" href=
+		<h3 class="artist">by </br></br><span><a style="text-decoration: underline;" href=
 		"<?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
 		echo $info['site'];
@@ -54,6 +57,7 @@
 		$info = unserialize($infotxt);
 		echo $info['description'];
 		?>
+		</br>
 		<span class="price">
                 <?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
@@ -71,7 +75,7 @@
 <div class="menu">
 <ul>
  <li><a href="/about">about</a></li>
- <li><a href="">archive</a></li>
+ <li><a href="/archive">archive</a></li>
  <li><a href="/contact">contact</a></li>
 </ul>
 </div>

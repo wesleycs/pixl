@@ -126,10 +126,11 @@ li {
     }
     .footer {
 	padding-top: 7%;
+	padding-bottom: 3% ;
     }
     .icons {
         padding-top: 2%;
-        padding-bottom: 0%;
+        padding-bottom:0;
     }
 
 }

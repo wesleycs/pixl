@@ -5,7 +5,7 @@ if(isset($_POST["submit"])){
 	$name = $_FILES['file']['name'];
 	$temp_name = $_FILES['file']['tmp_name'];
 	$location = '/var/www/test/uploads/';
-
+	$archive = '/var/www/test/archive/';
 	$title = $_POST["title"];
 	$artist = $_POST["artist"];
 	$site	= $_POST["site"];
@@ -28,8 +28,9 @@ if(isset($_POST["submit"])){
 	$info = unserialize($infotxt);
 
 
-	if(move_uploaded_file($temp_name, $location.$name)){
-	echo "success";
+	if(move_uploaded_file($temp_name, $location.'picture.jpg')){
+	    copy($location.$name, $archive.$name);
+	    echo "success";
 	}
 	else {
 	echo "fail"; }
