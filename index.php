@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div>
+<div class="logo">
 
 <ul>
     <table>
@@ -36,7 +36,7 @@
           <h1 class="dismiss">X</h3>
 	    <div class="info">
                 <h2 class="title">
-		<?php 
+		<?php
 		$infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
 		echo $info['title'];
@@ -49,7 +49,7 @@
 	        <?php
 		$infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
-		echo $info['artist']; 
+		echo $info['artist'];
 		?>
 		</a></span></h3>
                 <h4 class="description">
