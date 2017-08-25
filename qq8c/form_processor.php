@@ -26,7 +26,8 @@ if(isset($_POST["submit"])){
 	
 	$infotxt = file_get_contents('/var/www/test/uploads/info.txt');	
 	$info = unserialize($infotxt);
-
+	
+	unlink('/var/www/test/uploads/'.'picture.jpg');
 
 	if(move_uploaded_file($temp_name, $location.'picture.jpg')){
 	    copy($location.$name, $archive.$name);

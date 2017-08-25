@@ -1,4 +1,4 @@
-(function(){
+$(window).load((function(){
       $('.container')
       .wrap('<div class="container">')
       .each(function(){
@@ -11,7 +11,7 @@
          $frame.addClass('portrait');
         }
       });
-      })();
+      }))();
 
 $(".container").click(function(){
 	if($(".overlay").css("opacity") == "0"){

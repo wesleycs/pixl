@@ -2,7 +2,7 @@ body {}
 
 .logo {
     padding-top: 20%;
-    padding-bottom: 20%;
+    padding-bottom: 40%;
 }
 
 table, td, th {
@@ -157,7 +157,7 @@ li {
 }
 
 .footer {
-    padding-top: 50%;
+    padding-top: 20%;
     padding-left: auto;
     padding-right: auto;
 }
@@ -245,7 +245,7 @@ li {
     }
     .counter {
         margin-top: -10%;
-        margin-bottom: 8%;
+        margin-bottom: 0%;
     }
     .dismiss {
         display: none;
@@ -255,11 +255,11 @@ li {
     }
 
     .footer {
-    padding-top: 7%;
+    padding-top: 10%;
     padding-bottom: 3% ;
     }
     .menu {
-        padding-top: 12%;
+        padding-top: 0%;
         padding-bottom: 0%;
     }
     .icons {
