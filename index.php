@@ -8,7 +8,7 @@
 <?php include 'css/main.css'; ?>
 </style>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 
 </head>
@@ -41,7 +41,7 @@
 		$info = unserialize($infotxt);
 		echo $info['title'];
 		?></h2>
-		<h3 class="artist">by </br></br><span><a style="text-decoration: underline;" href=
+		<h3 class="artist">by </br><br/></br><span><a style="text-decoration: underline;" href=
 		"<?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
 		echo $info['site'];
@@ -62,9 +62,9 @@
                 <?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
 		echo $info['price'];
-	         ?></span> </h4>
+	         ?></span> </h4>	
                 <input type="button" class="button" value="Buy">
-            </div>
+           </div>
         </div>
     </div>
 

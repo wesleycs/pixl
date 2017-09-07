@@ -1,4 +1,16 @@
-$(window).load((function(){
+$(".container").click(function(){
+	if($(".overlay").css("opacity") == "0"){
+	$(".overlay").css("opacity", "1");
+}
+	
+});
+
+$(".dismiss").click(function(){
+	$(".overlay").css("opacity", "0");
+});
+
+
+$(window).on("load", function(){
       $('.container')
       .wrap('<div class="container">')
       .each(function(){
@@ -11,17 +23,6 @@ $(window).load((function(){
          $frame.addClass('portrait');
         }
       });
-      }))();
-
-$(".container").click(function(){
-	if($(".overlay").css("opacity") == "0"){
-	$(".overlay").css("opacity", "1");
-}
-	
-});
-
-$(".dismiss").click(function(){
-	$(".overlay").css("opacity", "0");
-});
+  })();
 
 
