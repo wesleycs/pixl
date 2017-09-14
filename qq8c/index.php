@@ -31,7 +31,7 @@
 	Name of Artist (First, Last): <input type="text" name="artist" value=""><br><br>
 	Link to artist site or profile (https://www.site.com) : <input type="text" name="site" value=""><br><br>
 	Description of Artwork (dimensions, medium, description) : <input type="text" name="description" value=""><br><br>
-	Price (ex. $15.00): <input type="text" name="price" value=""><br><br>
+	Price (ex. 1500 is $15.00): <input type="text" name="price" value=""><br><br>
 	<input type="submit" value="Upload" name="submit">
 </form>
 

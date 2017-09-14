@@ -61,21 +61,17 @@
 		<span class="price">
                 <?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
-		$cost = $info['price'];
-		$price = ((int) ($cost/100));
-		echo '$'. $price.'.00';
+		echo $info['price'];
 	         ?></span> </h4>	
+         <!--       <input type="button" class="button" value="Buy"> -->
 	 
 	 <!-- The Stripe API form for purchasing -->     
 
-	     <form action="charge.php" method="post">
+	     <form action="" method="POST">
 		<script
 		  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 		  data-key="<?php echo $stripe['publishable_key']; ?>"
-		  data-amount=<?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
-		  $info = unserialize($infotxt);
-		  $cost = $info['price'];
-		  echo $cost; ?>
+		  data-amount="000"
 		  data-label="Buy"
 		  data-name="Stripe.com"
 		  data-description="Widget"
