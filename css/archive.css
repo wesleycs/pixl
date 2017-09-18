@@ -42,6 +42,9 @@ li {
 
 .image_container p {
     display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
