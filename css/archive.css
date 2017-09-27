@@ -47,6 +47,13 @@ li {
     margin-right: auto;
 }
 
+#text {
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer {
     padding-top: 7%;
     padding-left: auto;

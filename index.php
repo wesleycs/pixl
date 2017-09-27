@@ -19,7 +19,7 @@
 <ul>
     <table>
         <tr>
-            <th><span><a href="">PIXL</a></span></th>
+            <th><span><a href="/about">PIXL</a></span></th>
         </tr>
         </table>
     </ul>
@@ -81,7 +81,10 @@
 		  data-description="Widget"
 		  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
 		  data-locale="auto"
-		  data-zip-code="true">
+		  data-zip-code="true"
+		  data-shipping-address="true"
+		  data-allow-remember-me="false"
+		  data-billing-address="false">
 		</script>
 	     </form>
            
