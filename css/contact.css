@@ -45,7 +45,7 @@ li {
 }
 
 .footer {
-    padding-top: 7%;
+    padding-top: 25%;
     padding-left: auto;
     padding-right: auto;
 }
@@ -125,6 +125,7 @@ li {
         height: 38%;
     }
     .footer {
+	padding-top: 7%;
 	padding-bottom: 3%;
     }
     .icons {

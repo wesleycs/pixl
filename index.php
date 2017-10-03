@@ -67,27 +67,27 @@
 	         ?></span> </h4>	
 	 
 	 <!-- The Stripe API form for purchasing -->     
-
-	     <form action="charge.php" method="post">
+	     <form class="checkout" action="charge.php" method="post">
 		<script
 		  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 		  data-key="<?php echo $stripe['publishable_key']; ?>"
-		  data-amount=<?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
+		  data-amount=<?php 
+   	  	  $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		  $info = unserialize($infotxt);
 		  $cost = $info['price'];
 		  echo $cost; ?>
 		  data-label="Buy"
-		  data-name="Stripe.com"
-		  data-description="Widget"
+		  data-name="Pixl Gallery"
+		  data-panel-label="Continue to checkout"
+		  data-description="Supporting artists"
 		  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
 		  data-locale="auto"
 		  data-zip-code="true"
 		  data-shipping-address="true"
-		  data-allow-remember-me="false"
-		  data-billing-address="false">
+		  data-allow-remember-me="false">
 		</script>
 	     </form>
-           
+	
          </div>
         </div>
     </div>
@@ -114,7 +114,7 @@
 </div>
 </body>
 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
-
 </html>

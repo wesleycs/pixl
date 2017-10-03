@@ -1,3 +1,5 @@
+//function to create hover like functionaliy on mobile (click instead of hover)
+
 $(".container").click(function(){
 	if($(".overlay").css("opacity") == "0"){
 	$(".overlay").css("opacity", "1");
@@ -9,6 +11,8 @@ $(".dismiss").click(function(){
 	$(".overlay").css("opacity", "0");
 });
 
+
+//function to display picture in portrait or landscape accordingly 
 
 $(window).on("load", function(){
       $('.container')
@@ -24,5 +28,6 @@ $(window).on("load", function(){
         }
       });
   })();
+
 
 
