@@ -8,18 +8,15 @@
   $price1 = $info1['price'];
 
   //normalize the price by dividing by 100 to account for how stripe
-  //makes you enter a price
-  //and add .00 for presentation
-	
+
   $price2 = ((int) ($price1/100));
 
   //Stripes token gained from submission used to charge a customer
 
   $token = $_POST['stripeToken'];
 
-  //grab their email and the token and create an array with those values
+  //grab customer email and the token and create an array with those values
   
-
    $customer = \Stripe\Customer::create(array(
 	'email' => $_POST['stripeEmail'],
 	'source' => $token
@@ -44,12 +41,13 @@ $order = \Stripe\Order::create(array(
 	 )
 	),
 	'shipping' => array(
-	 'name' => 'Jenny Rosen',
+	 'name' => $_POST['stripeBillingName'],
 	 'address' => array(
-	   'line1' => '1234 Main Street',	 
-	   'city' => 'San Francisco',
-	   'country' => 'US',
-	   'postal_code' => '94110'
+	   'line1' => $_POST['stripeBillingAddressLine1'],	 
+	   'city' => $_POST['stripeBillingAddressCity'],
+	   'postal_code' => $_POST['stripeBillingAddressZip'],
+	   'state' => $_POST['stripeBillingAddressState'],
+	   'country' => $_POST['stripeBillingAddressCountryCode']
 	  )
 	),
 ));
@@ -58,16 +56,29 @@ $ordid= $order['id'];
 $order = \Stripe\Order::retrieve($ordid);
 
 $num = $order['shipping_methods'][2]['id'];
+$shipping_amount = $order['shipping_methods'][2]['amount'];
+$estimated_delivery = $order['shipping_methods'][2]['delivery_estimate']['date'];
+
+  //updating order with num selects the cheapest shipping method and plugs it in
+
 $order['selected_shipping_method'] = $num; 
 
 $order->save();
 
+  //have to store order total after updating order with shipping
+
+$order_total = $order['amount'];
+
 echo $order;
+
+echo '<h2>'.$shipping_amount.'<h2>';
+echo '<h3>'.$order_total.'</h3>';
+echo '<h2>'.$estimated_delivery.'</h2>';
 
 /**
  $charge = \Stripe\Charge::create(array(
 	'customer' => $customer->id,
-	'amount' => $price1,
+	'amount' => $order_total,
 	'currency' => 'usd',
         'receipt_email' => $_POST['stripeEmail'],
 	'description' => 'Artwork from Pixl Gallery' 
@@ -77,8 +88,6 @@ echo $order;
   echo '<h1>Successfully charged</h1>';
  // print $charge->amount;
   echo '$'.$price2.'.00';
-  echo $_POST['stripeBillingAddressZip'];
-  echo $_POST['stripeBillingAddressLine1'];
 ?>
 
 <script type="text/javascript" src="js/checkout.js"></script>
