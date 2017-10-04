@@ -1,23 +1,5 @@
-<html>
-<head>
-</head>
-
-<body>
-
-<div class="logo">
-
-<ul>
-    <table>
-        <tr>
-            <th><span><a href="/about">PIXL</a></span></th>
-        </tr>
-        </table>
-    </ul>
-</div>
-
 <?php
   require_once('config.php');
-  include('css/main.css');
 
   //get the price from the object that holds current pictures data
 
