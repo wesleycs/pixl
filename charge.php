@@ -90,7 +90,9 @@ echo '<h2>'.$estimated_delivery.'</h2>';
   echo '$'.$price2.'.00';
 ?>
 <head>
-<link rel="stylesheet" type="text/css" href="css/charge.css">
+    <title>Pixl-Gallery </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/charge.css">
 </head>
 
 <body>
@@ -105,4 +107,39 @@ echo '<h2>'.$estimated_delivery.'</h2>';
 </ul>
 </div>
 
+<div class="text">
+    <p>Pixl is a curated art gallery and retail space.<br><br>
+       Pieces are displayed in the order that they are received.<br><br>
+       When the current work is
+       sold a new piece will take its place.<br><br>
+       If you would like to feature your work on Pixl please click <a href="/contact">here</a><br><br>
+       Check back often to discover new artists and enjoy new works.
+    </p>
+</div>
+
+</body>
+
+<div class="footer">
+<div class="menu">
+    <ul>
+        <li><a href="">about</a></li>
+        <li><a href="/archive/">archive</a></li>
+        <li><a href="/contact">contact</a></li>
+    </ul>
+</div>
+
+<div class="icons">
+    <ul>
+        <li>
+            <a href="https://www.twitter.com/pixl"><img class="twitter" src="/images/icons/twitter_logo.svg"></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/pixl"><img class="instagram" src="/images/icons/insta_logo.svg"></a>
+        </li>
+    </ul>
+</div>
+</div>
+
 <script type="text/javascript" src="js/checkout.js"></script>
+
+</html>
