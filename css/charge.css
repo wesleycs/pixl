@@ -214,6 +214,10 @@ li {
     width: 18px;
 }
 
+h1 {
+color: blue;
+}
+
 @media only screen and (min-width: 33.75em) {}
 
 @media only screen and (min-width: 60em) {

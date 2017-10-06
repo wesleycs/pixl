@@ -89,5 +89,9 @@ echo '<h2>'.$estimated_delivery.'</h2>';
  // print $charge->amount;
   echo '$'.$price2.'.00';
 ?>
+<head>
+<link rel="stylesheet" type="text/css" href="css/charge.css">
+</head>
+
 
 <script type="text/javascript" src="js/checkout.js"></script>
