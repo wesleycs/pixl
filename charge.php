@@ -93,5 +93,16 @@ echo '<h2>'.$estimated_delivery.'</h2>';
 <link rel="stylesheet" type="text/css" href="css/charge.css">
 </head>
 
+<body>
+<div class="logo">
+
+<ul>
+    <table>
+       <tr>
+	  <th><span><a href="/about">PIXL</a></span></th>
+       </tr>
+    </table>
+</ul>
+</div>
 
 <script type="text/javascript" src="js/checkout.js"></script>
