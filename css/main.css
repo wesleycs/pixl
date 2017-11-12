@@ -29,6 +29,8 @@ li {
     display: inline;
 }
 
+/* file path for picture determined via nginx routing */
+
 .container {
     box-shadow: -15px 35px 50px #a3a3a3;
     margin-left: auto;

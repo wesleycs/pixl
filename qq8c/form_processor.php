@@ -11,13 +11,15 @@ if(isset($_POST["submit"])){
 	$site	= $_POST["site"];
 	$description = $_POST["description"];
 	$price = $_POST["price"];
+	$sku = $_POST["sku"];
 
 	$store = array(
 		'title' => $title,
 		'artist' => $artist,
 		'site' => $site,
 		'description' => $description,			
-		'price' => $price
+		'price' => $price,
+		'sku' => $sku
 	);
 	
 	$fp = fopen('/var/www/test/uploads/info.txt', 'w');

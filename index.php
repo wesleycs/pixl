@@ -67,7 +67,7 @@
 	         ?></span> </h4>	
 	 
 	 <!-- The Stripe API form for purchasing -->     
-	     <form class="checkout" action="charge.php" method="post">
+	     <form class="checkout" action="shipping.php" method="post">
 		<script
 		  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 		  data-key="<?php echo $stripe['publishable_key']; ?>"
@@ -78,7 +78,7 @@
 		  echo $cost; ?>
 		  data-label="Buy"
 		  data-name="Pixl Gallery"
-		  data-panel-label="Continue to checkout"
+		  data-panel-label="Continue to Checkout"
 		  data-description="Supporting artists"
 		  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
 		  data-locale="auto"

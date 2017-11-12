@@ -32,6 +32,7 @@
 	Link to artist site or profile (https://www.site.com) : <input type="text" name="site" value=""><br><br>
 	Description of Artwork (dimensions, medium, description) : <input type="text" name="description" value=""><br><br>
 	Price (ex. 1500 is $15.00): <input type="text" name="price" value=""><br><br>
+	Product sku (from stripe API): <input type="text" name="sku" value=""><br><br>
 	<input type="submit" value="Upload" name="submit">
 </form>
 
