@@ -1,18 +1,30 @@
 <html>
+
 <head>
 <title>👁️ Pixl-Gallery </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<?php include 'users_online.php';?>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 <?php require_once('./config.php');?>
+
+<?php
+$infotxt = file_get_contents('/var/www/test/uploads/info.txt');
+$info = unserialize($infotxt);
+$orientation = $info['orientation'];
+?>
+
 <style>
 <?php include 'css/main.css'; ?>
 </style>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
-
 </head>
-<body>
+
+<a href="/about">
+<div class="menu">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</a>
 
 <div class="logo">
 
@@ -24,49 +36,51 @@
         </table>
     </ul>
 </div>
+	
+</div>
 
-    <div class="test">
-     <!--  <img src="http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg">-->
-	<img src="picture.jpg">
-      </img>
-    </div>
 
-    <div class="container" onclick="void(0)">
-        <div class="overlay">
-          <h1 class="dismiss">X</h3>
-	    <div class="info">
-                <h2 class="title">
+<body>
+  <div class="<?php echo $orientation;?>">
+  </div>
+   <div class="description">
+	 <h1 class="title">
 		<?php
 		$infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
-		echo $info['title'];
-		?></h2>
-		<h3 class="artist">by </br><br/></br><span><a style="text-decoration: underline;" href=
-		"<?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
-		$info = unserialize($infotxt);
-		echo $info['site'];
-		?>">
-	        <?php
-		$infotxt = file_get_contents('/var/www/test/uploads/info.txt');
-		$info = unserialize($infotxt);
-		echo $info['artist'];
+	        $title =$info['title'];
 		?>
-		</a></span></h3>
-                <h4 class="description">
+	        <p class="title"><?php echo $title; ?></p>
+		 <?php
+	        $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
+       	        $info = unserialize($infotxt); 
+   		$site = $info['site'];
+    		?>			
+                
+		<?php
+                $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
+                $info = unserialize($infotxt); 
+       	        $artist = $info['artist'];
+     	        ?>
+	        <a class="site" href="<?php echo $site;?>">
+		<p class="artist"><?php echo $artist; ?></p></a> 
+
 		<?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
-		echo $info['description'];
+		$description = $info['description'];
 		?>
-		</br>
-		<span class="price">
+		<p class="info"><?php echo $description; ?></p>
+
+
                 <?php $infotxt = file_get_contents('/var/www/test/uploads/info.txt');
 		$info = unserialize($infotxt);
 		$cost = $info['price'];
 		$price = ((int) ($cost/100));
-		echo '$'. $price.'.00';
-	         ?></span> </h4>	
-	 
-	 <!-- The Stripe API form for purchasing -->     
+	 	$price = '$'. $price.'.00 USD';
+	        ?>
+		<p class="price"><?php echo $price ?></p>
+
+		 <!-- The Stripe API form for purchasing -->     
 	     <form class="checkout" action="shipping.php" method="post">
 		<script
 		  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -88,23 +102,9 @@
 		  data-allow-remember-me="false">
 		</script>
 	     </form>
-	
-         </div>
-        </div>
-    </div>
 
-    <div class="counter">
-    <p class="count"><?php echo $count_user_online; ?> 👁️</p>
-    </div>
-
-<div class="footer">
-<div class="menu">
-<ul>
- <li><a href="/about">about</a></li>
- <li><a href="/archive">archive</a></li>
- <li><a href="/contact">contact</a></li>
-</ul>
-</div>
+ </div>
+</body>
 
 <div class="icons">
 <ul>
@@ -112,10 +112,9 @@
  <li><a href="https://www.instagram.com/pixlartgallery"><img class="instagram" src="images/icons/insta_logo.svg"></a></li>
 </ul>
 </div>
-</div>
-</body>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>

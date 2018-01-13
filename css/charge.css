@@ -32,6 +32,12 @@ li {
     display: inline;
 }
 
+.sorry {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
 img {
     width: ;
     height: ;

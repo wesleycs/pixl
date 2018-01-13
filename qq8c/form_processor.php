@@ -12,6 +12,7 @@ if(isset($_POST["submit"])){
 	$description = $_POST["description"];
 	$price = $_POST["price"];
 	$sku = $_POST["sku"];
+	$orientation = $_POST["orientation"];
 
 	$store = array(
 		'title' => $title,
@@ -19,7 +20,8 @@ if(isset($_POST["submit"])){
 		'site' => $site,
 		'description' => $description,			
 		'price' => $price,
-		'sku' => $sku
+		'sku' => $sku,
+		'orientation' => $orientation
 	);
 	
 	$fp = fopen('/var/www/test/uploads/info.txt', 'w');

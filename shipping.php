@@ -6,7 +6,7 @@
   $infotxt1 = file_get_contents('/var/www/test/uploads/info.txt');
   $info1 = unserialize($infotxt1);
   $price1 = (int) $info1['price'];
-
+  $orientation = $info1['orientation'];
   //normalize the price by dividing by 100 to account for how stripe
   // handles price input
 
@@ -57,7 +57,8 @@ $order = \Stripe\Order::create(array(
 	),
 ));
 }  catch(Stripe\Error\InvalidRequest $e) {
-	echo "<h3>".'This picture has sold. Check back shortly for a new exhibition or visit the pixl archive to view previous exhibitions'."<h3>";
+        $message = "😰  We're sorry - This picture just sold. We're hanging up a new piece. Please check back shortly for our newest exhibit.";
+	echo '<p class=\"info\">'.$message.'</p>';	
 }
 
 
@@ -103,12 +104,13 @@ $order_total = $order_total_stripe/100;
 <head>
     <title>Pixl-Gallery </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/charge.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-<div class="logo">
+
+<div class="logo-1">
 
 <ul>
     <table>
@@ -119,40 +121,28 @@ $order_total = $order_total_stripe/100;
 </ul>
 </div>
 
-
-<div class="text">
-
-    <p>
+<div class="shipping">
+  <p>
 <!--<?php echo $order ?>-->
 <?php echo '<h3>'.htmlentities($title).'</h3>';?>
 <!--<?php echo '<h4> Price: $'.$price2.'.00</h4>';?>-->
 <?php echo '<p> Standard shipping: $'.$shipping_amount.'</p>';?>
-<!--<?php echo '<h5> Estimated delivery date: '.$estimated_delivery.'</h2>';?>-->
+<?php echo '<h5> Estimated delivery date: '.$estimated_delivery.'</h2>';?>
 <?php echo '<h3> Order Total: $'.$order_total.'</h3>';?>
 <br><br>
-<a href="">
-<form action="charge.php" method="post">
-<input type="hidden" name="customer_id" value="<?php echo $customer->id?>" />
-<input type="hidden" name="order_total_stripe" value="<?php echo $order_total_stripe?>" />
-<input type="hidden" name="email" value="<?php echo htmlentities($_POST['stripeEmail'])?>" />
-<input type="hidden" name="order_id" value="<?php echo $orderid?>" />
-<button href=""  class="button" type="submit" >Confirm Purchase</button>
-</form>
-</a>
-
-   </p>
+	<a href="">
+	<form action="charge.php" method="post">
+	<input type="hidden" name="customer_id" value="<?php echo $customer->id?>" />
+	<input type="hidden" name="order_total_stripe" value="<?php echo $order_total_stripe?>" />
+	<input type="hidden" name="email" value="<?php echo htmlentities($_POST['stripeEmail'])?>" />
+	<input type="hidden" name="order_id" value="<?php echo $orderid?>" />
+	<button href=""  class="button" type="submit" >Confirm Purchase</button>
+	</form>
+	</a>
+  </p>
 </div>
 
 </body>
-
-<div class="footer">
-<div class="menu">
-    <ul>
-        <li><a href="/about">about</a></li>
-        <li><a href="/archive/">archive</a></li>
-        <li><a href="/contact">contact</a></li>
-    </ul>
-</div>
 
 <div class="icons">
     <ul>

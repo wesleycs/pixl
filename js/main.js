@@ -1,33 +1,18 @@
-//function to create hover like functionaliy on mobile (click instead of hover)
+window.onscroll = function() {myFunction()};
 
-$(".container").click(function(){
-	if($(".overlay").css("opacity") == "0"){
-	$(".overlay").css("opacity", "1");
+// Get the header
+var header = document.getElementById("header");
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add sticky class to header when you reach scroll position. Remove sticky when you
+// leave scroll position
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+	header.classList.add("sticky");
+    } else {
+	header.classList.remove("sticky");
+ }
 }
-	
-});
-
-$(".dismiss").click(function(){
-	$(".overlay").css("opacity", "0");
-});
-
-
-//function to display picture in portrait or landscape accordingly 
-
-$(window).on("load", function(){
-      $('.container')
-      .wrap('<div class="container">')
-      .each(function(){
-        var $this = $('.test img');
-        var $frame = $('.container')
-        if ($this.width() > $this.height()) {
-        $frame.addClass('landscape');
-        }
-        else{
-         $frame.addClass('portrait');
-        }
-      });
-  })();
-
-
 

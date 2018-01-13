@@ -14,7 +14,7 @@
     	//Code to do something with the $e exception object when an error occurs	
     echo "<h3>".'Your card has been declined. Please return to the Pixl homepage and try checking out with another card'."</h3>";
 } 
-    print_r($charge);
+    //print_r($charge);
 
     //update product quantity to 0 after purhcase to avoid race conditions
 
@@ -28,3 +28,42 @@
    
 
 ?>
+
+<head>
+    <title>Pixl-Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.o">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+<div class="logo-1">
+
+<ul> 
+    <table>
+       <tr>
+          <th><span><a href="/">PIXL</a></span></th>
+       <tr>
+    </table>
+</ul>
+</div>
+
+<div class="shipping">
+ <h1> 🎉 Congratulation - You just bought a rare and  original artwork from Pixl Gallery! Thank you for supporting artists. Check your email for your tracking number and order information. Please email pixlgallery@gmail.com if you have any further questions or comments - and check back shortly for a new exhibit! 
+ </h1>
+</div>
+</body>
+
+<div class="icons">
+  <ul> 
+     <li>
+	<a href="https://www.twitter.com/pixl"><img class="twitter" src="/images/icons/twitter_logo.svg"></a>
+     </li>
+     <li>
+        <a href="https://www.instagram.com/pixl"><img class="instagram" src="/images/icons/insta_logo.svg"></a>
+     </li>
+  </ul>
+ </div>
+</div>
+
+</html>

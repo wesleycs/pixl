@@ -33,6 +33,7 @@
 	Description of Artwork (dimensions, medium, description) : <input type="text" name="description" value=""><br><br>
 	Price (ex. 1500 is $15.00): <input type="text" name="price" value=""><br><br>
 	Product sku (from stripe API): <input type="text" name="sku" value=""><br><br>
+	Orientation: type "landscape" or "portrait": <input type="text" name="orientation" value=""></br></br>
 	<input type="submit" value="Upload" name="submit">
 </form>
 
