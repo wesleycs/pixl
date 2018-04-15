@@ -1,6 +1,7 @@
 <?php
     require_once('config.php');
-    
+    include('header.php');   
+ 
     try {
     $charge = \Stripe\Charge::create(array(
 		'customer' => $_POST['customer_id'],
@@ -12,7 +13,9 @@
     
     } catch (Stripe\Error\Charge $e) {
     	//Code to do something with the $e exception object when an error occurs	
-    echo "<h3>".'Your card has been declined. Please return to the Pixl homepage and try checking out with another card'."</h3>";
+    
+    header("Location:https://pixl-gallery.com/error.php");
+    exit;
 } 
     //print_r($charge);
 
@@ -49,9 +52,10 @@
 </div>
 
 <div class="shipping">
- <h1> 🎉 Congratulation - You just bought a rare and  original artwork from Pixl Gallery! Thank you for supporting artists. Check your email for your tracking number and order information. Please email pixlgallery@gmail.com if you have any further questions or comments - and check back shortly for a new exhibit! 
+ <h1> 🎉 Congratulation - You just bought a rare and  original artwork from Pixl Gallery! Thank you for supporting artists. Check your email for your tracking number and order information. Please email pixlartgallery@gmail.com if you have any further questions or comments - and check back shortly for a new exhibit! 
  </h1>
 </div>
+
 </body>
 
 <div class="icons">

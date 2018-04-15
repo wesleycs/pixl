@@ -1,6 +1,5 @@
 <?php
   require_once('config.php');
-
   //get the price from the object that holds current pictures data
 
   $infotxt1 = file_get_contents('/var/www/test/uploads/info.txt');
@@ -56,9 +55,11 @@ $order = \Stripe\Order::create(array(
 	  )
 	),
 ));
+
 }  catch(Stripe\Error\InvalidRequest $e) {
-        $message = "😰  We're sorry - This picture just sold. We're hanging up a new piece. Please check back shortly for our newest exhibit.";
-	echo '<p class=\"info\">'.$message.'</p>';	
+
+	header('Location: https://www.pixl-gallery.com/soldout.php');
+
 }
 
 

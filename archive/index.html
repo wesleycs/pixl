@@ -1,54 +1,26 @@
 <html>
-
 <head>
-    <title>Pixl-Gallery </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/contact.css">
-    <style>
-
-    </style>
 </head>
-
 <body>
-
-
-    <div class="logo">
-        <ul>
-            <table>
-                <tr>
-                    <th><span><a href="../">PIXL</a></span></th>
-                </tr>
-            </table>
-        </ul>
-    </div>
-
-
-    <div class="image_container">
-<!--	<p id="text">All works hosted on pixl will appear on the archive page.</p> -->       
-    </div>
-
+    <button onclick="getLocation()">Try It</button> 
 </body>
 
-<div class="footer">
-    <div class="menu">
-        <ul>
-            <li><a href="../about">about</a></li>
-            <li><a href="">archive</a></li>
-            <li><a href="../contact">contact</a></li>
-        </ul>
-    </div>
 
-    <div class="icons">
-        <ul>
-            <li>
-                <a href="https://www.twitter.com/pixl"><img class="twitter" src="../images/icons/twitter_logo.svg"></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/pixl"><img class="instagram" src="../images/icons/insta_logo.svg"></a>
-            </li>
-        </ul>
-    </div>
-</div>
+<script> 
 
+function getLocation() {
+	if(navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(showPosition);
+	} else {
+		console.log("fail");
+	}
+}
 
+function showPosition(position) {
+	var currentLat = position.coords.latitude;
+	console.log(currentLat);
+	var currentLng = position.coords.longitude;
+	console.log(currentLng);
+}
+</script>
 </html>

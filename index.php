@@ -18,12 +18,10 @@ $orientation = $info['orientation'];
 
 </head>
 
-<a href="/about">
-<div class="menu">
+<a class="menu" href="/about">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
-</div>
 </a>
 
 <div class="logo">
@@ -42,6 +40,7 @@ $orientation = $info['orientation'];
 
 <body>
   <div class="<?php echo $orientation;?>">
+	<img class="art" src="picture.jpg">
   </div>
    <div class="description">
 	 <h1 class="title">
@@ -81,7 +80,7 @@ $orientation = $info['orientation'];
 		<p class="price"><?php echo $price ?></p>
 
 		 <!-- The Stripe API form for purchasing -->     
-	     <form class="checkout" action="shipping.php" method="post">
+	     <form id="buy_button" class="checkout" action="shipping.php" method="post">
 		<script
 		  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 		  data-key="<?php echo $stripe['publishable_key']; ?>"
@@ -102,6 +101,10 @@ $orientation = $info['orientation'];
 		  data-allow-remember-me="false">
 		</script>
 	     </form>
+
+		<h1 class="sold">SOLD OUT</h1>
+ 		<p class="sold">Check back shortly..we're hanging up a new piece</p>
+
 
  </div>
 </body>

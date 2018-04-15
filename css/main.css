@@ -7,6 +7,12 @@ html {
     cursor: pointer;
     margin-left: 90%;
     margin-top: 5%;
+    outline: none;
+    tap-highlight-color: rgba(0,0,0,0);
+}
+
+.menu:focus {
+    background-color: none;
 }
 
 .bar1, .bar2, .bar3 {
@@ -92,27 +98,24 @@ li {
 }
 
 .landscape {
-    box-shadow: 5px 5px 8px #929292;
-    max-width: 500px;
-    max-height: 25px;
+    box-shadow: 5px 5px 15px #929292;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("picture.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 350px;
 }
 
 .portrait {
-    box-shadow: 5px 5px 8px #929292;
-    width: 350px;
-    max-height: 50px;
+    box-shadow: 5px 5px 15px #929292;
+    max-width: 350px;
+    /*max-height: 50px;*/
     margin-left: auto;
     margin-right: auto;
-    background-image: url("picture.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+   /* background-image: url("picture.jpg");*/
     padding-top: 425px;
+}
+
+.art {
+    max-width: 100%;
 }
 
 .description {
@@ -135,6 +138,29 @@ li {
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     margin-bottom: 9%;
+}
+
+#buy_button {
+
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.button_link {
+    text-decoration: none;
+}
+
+.sold {
+    display: none;
 }
 
 .shipping {
@@ -199,11 +225,9 @@ li {
 
     .landscape {
         width: 500px;
-        height: 350px;
         margin-top: 10%;
         margin-left: auto;
         margin-right: auto;
-        background-image: url("picture.jpg");
     }
     .portrait {
         width: 400px;
@@ -211,7 +235,6 @@ li {
         margin-top: -5%;
         margin-left: auto;
         margin-right: auto;
-        background-image: url("picture.jpg");
     }
 
 }

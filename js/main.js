@@ -16,3 +16,4 @@ function myFunction() {
  }
 }
 
+document.addEventListener("touchstart", function(){}, true);
