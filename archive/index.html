@@ -19,7 +19,7 @@
 	  }
 
     </style>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgMTebEiL883cpYON_64b9abCSTDaHPkY&libraries=geometry"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgMTebEiL883cpYON_64b9abCSTDaHPkY&libraries=geometry"></script>
 
 </head>
 
@@ -27,8 +27,10 @@
  	<p>Your distance from the fire hydrant is :</p>
 
 <button onclick="getLocation()">Try It</button>
-
+<button onclick="initMap()">click</button>
 <p id="result"></p>
+
+<div id="map"></div>
 
 <table id="hydrants" class="table table-bordered table-hover table-condensed">
 <tbody><tr>
@@ -47289,36 +47291,58 @@
 </tr>
 </tbody></table>
 
- </body>
+</body>
 <script>
 
 var result = document.getElementById("result");
 var table = document.getElementById('hydrants');
-//var lat;
-//var lng;
+var usrlat;
+var usrlng;
 
-var userLat = 42.916198;
-var userLng = -78.849824;
+//var userLat = 42.916198;
+//var userLng = -78.849824;
 var fifteenFeet = 4.572;
 
 
-// iterate over fire hydrant latitudes & longitudes table and store them in
-// variables to operate on. Note - long comes before latitude in table
-// (data was backwards)
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(getPosition);
+    } else {
+        result.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
 
+// get a users location and pass it to the function that checks it against fire
+// hydrant latitude and longitudes 
+
+function getPosition(position) {
+    result.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+    usrlat = position.coords.latitude;
+    usrlng = position.coords.longitude;
+    createPairs(usrlat, usrlng);
+
+}
+
+// iterate over fire hydrant latitudes & longitudes table and store them in
+// variables to operate on. The user lat and long are passed to an equation
+// that checks the distance between the user and each fire hydrant in the table
+// Note - long comes before latitude in table because the data was backwards
+
+function createPairs (userLat, userLng){
 for (var j = 0; j<table.rows.length; j+=2){
 	lat = parseFloat(table.rows[j+1].cells[0].innerHTML);
 	lng = parseFloat(table.rows[j].cells[0].innerHTML);
-	compute(lat, lng, userLat, userLng);
+	computeDifference(lat, lng, userLat, userLng);
 
 	//console.log("Lat " + table.rows[j+1].cells[0].innerHTML);
 	//console.log("Long " + table.rows[j].cells[0].innerHTML);
+	}
 }
-
 // function that takes in every lat&lng fire hydrant pair and computes the distance
 // to users current location using the google computeDistanceBetween function
 
-function compute(lat, lng, userLat, userLng) {
+function computeDifference(lat, lng, userLat, userLng) {
 	var currentCoords = new google.maps.LatLng({ lat: userLat, lng: userLng });
 	var hydrant = new google.maps.LatLng({ lat: lat, lng: lng });
 	var calc = google.maps.geometry.spherical.computeDistanceBetween(currentCoords, hydrant);
@@ -47330,23 +47354,6 @@ function compute(lat, lng, userLat, userLng) {
 	}
 
 }
-
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
-	console.log("Latitude " + position.coords.latitude);
-	console.log("Longitude " + position.coords.longitude);
-}
-
-
 
 </script>
 </html>
