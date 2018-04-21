@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <meta http-equiv="Cache-control" content="no-cache">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <title>Hydrants</title>
     <style>
         /* Always set the map height explicitly to define the size of the div
@@ -157,7 +157,7 @@
                     </br>
                     </br>
                     </br>
-                    </br>**Please note: Your current location is determined by GPS satelites and cell phone towers and can sometimes be innaccurate. Use this tool at your own discretion. </p>
+                    </br>**Please note: Turn on location services to use. Your current location is determined by GPS satelites and cell phone towers and can sometimes be innaccurate. Use this tool at your own discretion. </p>
             </div>
             <div class="modal-footer">
             </div>
@@ -47465,7 +47465,7 @@
         var flag = 0;
 
         function getLocation() {
-            if (flag == 0) {
+            if (flag != 2) {
                 console.log("zero");
                 flag += 1;
                 getLocation();
@@ -47493,7 +47493,7 @@
             var mapOptions = {
                 center: centerPosition,
                 zoom: 22,
-                zoomControl: false,
+                zoomControl: true,
                 mapTypeId: 'roadmap',
                 streetViewControl: false,
                 mapTypeControl: false
